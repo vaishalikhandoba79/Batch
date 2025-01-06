@@ -1,0 +1,28 @@
+Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+Datatypes are used to specify the what kind of data stored
+
+
+Datatypes are used to specify the what kind of data stored
+
+types of data types:-
+1.primitive data types:-
+- They are built-in.
+-Immutable.
+-they can store only a single value.
+-string
+-number
+-Boolean
+-undefined
+-null
+-symbol datatype
+-big integer
+
+
+2.non primitive data types:-
+-they are user defined
+-they can store multiple values
+-mutable.
+   -array
+   -functions
+   -objects
+   -match, data , json
