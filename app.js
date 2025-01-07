@@ -55,4 +55,4 @@ let b=null;
 console.log(b); //null
 console.log(typeof(b));
 
-console.log(2n,typeof(2n));
+ console.log(2n,typeof(2n));
