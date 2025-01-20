@@ -130,5 +130,53 @@
 //     console.log(user.name);
 // })
 
+// let user1 = "Akanksh";
+// let user2 = "Vaishali";
+// let user3 = "Bengali";
+// let user4 = "Karnataka";
+// let user5 = "Andhra Pradesh";
 
+// console.log(user1);
+// console.log(user2);
+// console.log(user3);
+// console.log(user4);
+// console.log(user5);
 
+//let users = ["Vaishali", "Akanksh", "Sonu", "Quty", "AA", "Prabhas"];
+// let x=users.map((user)=>{
+    // console.log(user);
+// return user;
+// });
+// console.log(x);
+
+//let x = users.forEach((user)=>{
+    // console.log(user);
+    //return user;
+//});
+//console.log(x); //!undefined
+
+// let userDetails = {
+//     name : "Vaishali",
+//     age : 20,
+//     company : "TCS",
+//     Sal : 1234567890,
+//     Details : function(){
+//         return `My name is ${this.name} and i am working in ${this.company}`
+//     }
+// };
+// console.log(userDetails);
+// console.log(userDetails.name);
+// console.log(userDetails.Details());
+
+//! JSON
+let userDetails = {
+    name : "Sam",
+    Age : 25,
+    city : "hyd"
+};
+console.log(userDetails);
+
+let x = JSON.stringify(userDetails);
+console.log("JSON object "+x);
+let y = JSON.parse(x);
+console.log(y);
