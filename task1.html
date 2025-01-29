@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Details</h2>
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Emp ID</th>
+                <th>Emp Name</th>
+                <th>Emp Company</th>
+                <th>Emp Salary</th>
+                <th>Emp City</th>
+                <th>Emp Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Employee data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Employee array
+        const employees = [
+            { id: 101, name: "John Doe", company: "Tech Corp", salary: 60000, address: { city: "New York", area: "Brooklyn" } },
+            { id: 102, name: "Jane Smith", company: "Finance Inc", salary: 75000, address: { city: "Los Angeles", area: "Downtown" } },
+            { id: 103, name: "Samuel Green", company: "Health Ltd", salary: 50000, address: { city: "Chicago", area: "Lincoln Park" } }
+        ];
+
+        // Function to generate table rows
+        function generateTable() {
+            const tableBody = document.querySelector("#employeeTable tbody");
+
+            employees.forEach(emp => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${emp.id}</td>
+                    <td>${emp.name}</td>
+                    <td>${emp.company}</td>
+                    <td>${emp.salary}</td>
+                    <td>${emp.address.city}</td>
+                    <td>${emp.address.area}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Call the function to populate the table
+        generateTable();
+    </script>
+
+</body>
+</html>
