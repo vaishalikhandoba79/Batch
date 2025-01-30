@@ -17,8 +17,8 @@
 
 //! with parameters and arguments
 // function add1(a,b){
-//     // console.log(a);
-//     // console.log(b);
+     // console.log(a);
+     // console.log(b);
 //     console.log(a+b);
 // }
 // add1(5,6);
@@ -38,10 +38,10 @@
 // {
 //     let revStr = "";
 //     for(let i = str.length-1;i>=0;i--){
-//         //console.log(str[i]);
+         //console.log(str[i]);
 //         revStr += str[i];
 //     }
-//     //console.log(revStr);
+     //console.log(revStr);
 //     if(str == revStr){
 //         console.log("Palindrome");
 //     }else{
@@ -68,7 +68,7 @@
 // let x =function(){
 //     console.log("function expression");
 // };
-// // console.log(x);
+ // console.log(x);
 // x();
 // x();
 // x();
